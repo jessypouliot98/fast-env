@@ -4,7 +4,7 @@ FAST_ENV_DIR="$HOME/.fast-env"
 
 cd $HOME
 
-if [ -d FAST_ENV_DIR ]
+if [ -d $FAST_ENV_DIR ]
   then
     echo "Cloning Fast-Env"
     git clone https://github.com/jessypouliot98/fast-env.git $FAST_ENV_DIR
