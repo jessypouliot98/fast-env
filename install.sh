@@ -9,9 +9,10 @@ git clone https://github.com/jessypouliot98/fast-env.git $FAST_ENV_DIR
 
 echo "Adding fast-env to your .zshrc"
 SOURCE_FAST_ENV=$(cat <<-END
-# START Sourcing fast-env config
-source $FAST_ENV_DIR/main.zsh
-# END
+\n
+# START Sourcing fast-env config\n
+source $FAST_ENV_DIR/main.zsh\n
+# END\n
 END
 )
 echo $SOURCE_FAST_ENV >> $HOME/.zshrc
