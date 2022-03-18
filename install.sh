@@ -7,12 +7,13 @@ cd $HOME
 echo "Cloning Fast-Env"
 git clone https://github.com/jessypouliot98/fast-env.git $FAST_ENV_DIR
 
-if test -f "$HOME/.zshrc"; then
-  echo "Renaming previous .zshrc config to .zshrc.old"
-  mv $HOME/.zshrc $HOME/.zshrc.old
-fi
-
-echo "Linking ./fast-env/main.zsh to ./zshrc"
-ln -s $FAST_ENV_DIR/main.zsh $HOME/.zshrc
+echo "Adding fast-env to your .zshrc"
+SOURCE_FAST_ENV=$(cat <<-END
+# START Sourcing fast-env config
+source $FAST_ENV_DIR/main.zsh
+# END
+END
+)
+echo $SOURCE_FAST_ENV >> $HOME/.zshrc
 
 echo "Close terminal and reopen or run \"source $HOME/.zshrc\" to load new configuration"
