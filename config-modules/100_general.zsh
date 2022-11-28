@@ -1,7 +1,7 @@
 ZSH_CONFIG=$HOME/.zshrc
 FAST_ENV=$HOME/.fast-env
 
-alias ll="ls -laf"
+alias ll="ls -la" 
 alias reload="source $ZSH_CONFIG"
 alias fastenv:load="cd $FAST_ENV && git pull"
 alias fastenv:save="cd $FAST_ENV && git add . && git commit -m \"save\" && git push"
