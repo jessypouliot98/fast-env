@@ -6,6 +6,4 @@ then
   \. "$NVM_DIR/nvm.sh"
 
   export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH" # Make Yarn global CLI available
-else
-  echo "NVM not installed"
 fi

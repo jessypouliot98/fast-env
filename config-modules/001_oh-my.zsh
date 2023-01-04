@@ -4,9 +4,6 @@ export ZSH="$HOME/.oh-my-zsh"
 if [ -d $ZSH ]
 then
   ZSH_THEME="robbyrussell"
-
-  plugins=(git)
-
   source $ZSH/oh-my-zsh.sh
 else
   echo "Oh My Zsh is not installed"
