@@ -1,3 +1,7 @@
+# dependencies
+PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
+
+# asdf
 . "$HOME/.asdf/asdf.sh"
 
 # append completions to fpath
